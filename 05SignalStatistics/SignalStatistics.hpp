@@ -1,3 +1,10 @@
+/*
+Library definition for signal statistics
+Signal Statistics includes:
+1. Signal Mean
+2. Signal Variance
+*/
+
 #ifndef SIGNALSTATISTICS_H
 #define SIGNALSTATISTICS_H
 
