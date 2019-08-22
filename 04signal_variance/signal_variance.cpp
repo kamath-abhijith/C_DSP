@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h>				// For sqrt() to compute the standard deviation
 #include "waveforms.cpp"		// Including the .cpp file with the signal
 
 using namespace std;
@@ -24,6 +24,10 @@ double calc_signal_mean(double *signal, int sig_length)
 
 double calc_signal_variance(double *signal, double signal_mean, int sig_length)
 {
+	/*
+	INPUT: Address of the first element of the signal, signal mean and signal length
+	OUTPUT: Unbiased variance of the signal
+	*/
 	double _variance = 0.0;
 	for(int i=0; i<sig_length; i++){
 		_variance = _variance + (signal[i]-signal_mean)*(signal[i]-signal_mean);
